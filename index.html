@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nutthapat Sumanont</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Nutthapat (Beck) Sumanont, BSc student at The University of Hong Kong. Leukemia research at the lab bench and in the data.">
+<meta property="og:title" content="Nutthapat Sumanont">
+<meta property="og:description" content="BSc student at The University of Hong Kong. Leukemia research at the lab bench and in the data.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nutthapat-sumanont.github.io/">
+<meta property="og:image" content="https://nutthapat-sumanont.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbfbfd">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,2 28.1,9 28.1,23 16,30 3.9,23 3.9,9' fill='%23ff6a00'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">
+      <svg class="mark" viewBox="0 0 20 23" aria-hidden="true"><polygon points="10,0 20,5.75 20,17.25 10,23 0,17.25 0,5.75"/></svg>
+      Nutthapat Sumanont
+    </a>
+    <nav aria-label="Sections">
+      <a href="#lab">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- THE STORY: 276 shapes = the 276 Beat AML patients. They settle into hexagon "cells" as you scroll. -->
+  <section class="story" id="story" aria-label="Introduction and featured research">
+    <div class="story-stage" aria-hidden="true">
+      <canvas id="cells"></canvas>
+    </div>
+
+    <div class="story-steps">
+      <div class="step step-hero">
+        <div class="step-text">
+          <h1>Start with a question. Finish only when it makes sense.</h1>
+          <p class="lede">I'm Beck, a first-year science student at The University of Hong Kong. I study leukemia, at the lab bench and in the data.</p>
+          <p class="hint">Tap the shapes. Double-tap for a surprise. Then scroll to find out what they are.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>Each hexagon is one adult with acute myeloid leukemia.</h2>
+          <p>276 patients from the Beat AML 2.0 study, with one RNA sample each.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>100 of them carry a mutation in one gene, <span class="gene">NPM1</span>.</h2>
+          <p>That's 36% of this group.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>In their cancer cells, the same genes switch on.</h2>
+          <p>HOXA9 and MEIS1 run about three times higher. Across the genome, 1,019 genes changed.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>Those genes are what a new kind of drug targets.</h2>
+          <p>Menin inhibitors, first approved for NPM1-mutated AML in 2025, are designed to switch this program off.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>Then I checked it in 111 different patients.</h2>
+          <p>In a separate study (TCGA), the same gene signature still told the two groups apart, with an AUC of 0.99 out of a perfect 1.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>Inside the 100, there's a second split.</h2>
+          <p>About a third (37) lean toward a primitive, stem-cell-like program. The other 63 look more mature. Two research teams described these subtypes in 2021 and 2023, and the same split showed up again in TCGA.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-text">
+          <h2>And the two groups react differently to a drug.</h2>
+          <p>In lab tests on patients' own leukemia cells, the primitive group was far more sensitive to venetoclax, a widely used AML drug. It's an early result, but it hints that one mutation may need more than one treatment plan.</p>
+        </div>
+      </div>
+
+      <div class="step step-project">
+        <div class="step-text">
+          <div class="project-card" id="project">
+            <p class="project-kicker">Featured project, 2026</p>
+            <h2>NPM1-mutated AML transcriptomics</h2>
+            <p>NPM1-mutated AML is often treated as one disease. My analysis adds evidence that it holds at least two subtypes, which may respond to drugs differently.</p>
+            <h3>What the analysis added</h3>
+            <ul class="adds">
+              <li>The NPM1 gene signature held up in a second, independent cohort.</li>
+              <li>A locked 33-gene panel called NPM1 status correctly in 108 of 111 patients from that second cohort (AUC 0.996).</li>
+              <li>Cell maturity explains only a small part of that signature.</li>
+              <li>The primitive subtype's apparent FTO signal comes from a hidden transcript, IFEX9, as a 2023 study proposed.</li>
+            </ul>
+            <div class="buttons">
+              <a class="btn btn-primary" href="https://nutthapat-sumanont.github.io/npm1-aml-transcriptomics/">Explore the project</a>
+              <a class="btn btn-quiet" href="https://github.com/nutthapat-sumanont/npm1-aml-transcriptomics">View the code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESAMIN: real viability data played with hexagon "wells", and the therapeutic window from the paper -->
+  <section class="band" id="lab">
+    <div class="wrap">
+      <div class="lab">
+        <div class="lab-text">
+          <h2 class="section-title">Can sesamin slow leukemia cells?</h2>
+          <p class="lab-meta">Faculty of Medical Technology, Mahidol University, 2025. With Dalina Tanyong.</p>
+          <p>Leukemia treatment in Thailand is often costly and hard on patients. Sesamin, a natural compound from black sesame, was already known to push two leukemia cell lines toward cell death. I wanted to know how much it takes, and whether that dose is safe for the rest of the body.</p>
+          <p>I treated NB4 (acute promyelocytic leukemia) and MOLT-4 (T-cell acute lymphoblastic leukemia) cells for 24 and 48 hours and measured survival with MTT assays. Then I reviewed published safety data for normal cells along the digestive tract, from the mouth to the liver.</p>
+          <dl class="ic50">
+            <div><dt>NB4, IC50</dt><dd>777.7 <span>at 24 h</span></dd><dd class="later">522.6 <span>at 48 h</span></dd></div>
+            <div><dt>MOLT-4, IC50</dt><dd>565.9 <span>at 24 h</span></dd><dd class="later">496.4 <span>at 48 h</span></dd></div>
+          </dl>
+          <p class="unit-note">IC50 in µg/mL: the dose that halves cell viability.</p>
+          <div class="buttons paper-link">
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/1cmPPznoLRwz5mSKwl2Azi1DzZHixrxHi/view">Read the paper</a>
+          </div>
+          <p class="review-note">Reviewed by academic reviewers at the Faculty of Medical Technology, Mahidol University.</p>
+        </div>
+
+        <div class="lab-panel" aria-labelledby="lab-try">
+          <h3 id="lab-try">Run the experiment</h3>
+          <div class="controls">
+            <div class="seg" role="group" aria-label="Sesamin dose">
+              <button type="button" data-dose="0">0</button>
+              <button type="button" data-dose="1">100</button>
+              <button type="button" data-dose="2">300</button>
+              <button type="button" data-dose="3" aria-pressed="true">500</button>
+            </div>
+            <span class="seg-unit">µg/mL</span>
+            <div class="seg" role="group" aria-label="Time">
+              <button type="button" data-time="24">24 h</button>
+              <button type="button" data-time="48" aria-pressed="true">48 h</button>
+            </div>
+          </div>
+          <div class="wells">
+            <figure class="well" data-line="NB4">
+              <svg viewBox="-100 -100 200 200" role="img" aria-label="NB4 cells"></svg>
+              <figcaption><strong>NB4</strong><span class="pct">53.7%</span> alive</figcaption>
+            </figure>
+            <figure class="well" data-line="MOLT-4">
+              <svg viewBox="-100 -100 200 200" role="img" aria-label="MOLT-4 cells"></svg>
+              <figcaption><strong>MOLT-4</strong><span class="pct">52.4%</span> alive</figcaption>
+            </figure>
+          </div>
+          <p class="panel-note">Mean viability from 5 MTT runs. Every treated dose differed significantly from untreated cells. Each hexagon is 1/60 of the cells.</p>
+          <div class="sr-only"><table>
+            <caption>Mean cell viability (%) by sesamin dose</caption>
+            <thead><tr><th>Dose (µg/mL)</th><th>NB4 24 h</th><th>NB4 48 h</th><th>MOLT-4 24 h</th><th>MOLT-4 48 h</th></tr></thead>
+            <tbody>
+              <tr><td>0</td><td>100</td><td>100</td><td>100</td><td>100</td></tr>
+              <tr><td>100</td><td>86.6</td><td>77.7</td><td>85.9</td><td>73.9</td></tr>
+              <tr><td>300</td><td>75.3</td><td>68.2</td><td>70.8</td><td>65.1</td></tr>
+              <tr><td>500</td><td>68.9</td><td>53.7</td><td>56.9</td><td>52.4</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+      </div>
+
+      <figure class="window" id="window">
+        <figcaption class="window-head">
+          <h3>The dose that works isn't a safe dose yet</h3>
+          <p>Free sesamin only slowed leukemia cells at 7 to 35 times the level that normal digestive-tract cells tolerate in published studies.</p>
+        </figcaption>
+        <div class="win-chart">
+          <div class="win-track" aria-hidden="true">
+            <div class="win-bar win-safe" style="left:0%;width:45.77%"></div>
+            <div class="win-gap" style="left:45.77%;width:24.25%"><span class="long">7 to 35&times; higher</span><span class="short">7 to 35&times;</span></div>
+            <div class="win-bar win-eff" style="left:70.02%;width:19.97%"></div>
+          </div>
+          <div class="win-axis" aria-hidden="true"><span style="left:0%">1</span><span style="left:28.57%">10</span><span style="left:57.14%">100</span><span style="left:85.71%">1,000 µM</span></div>
+          <ul class="win-legend">
+            <li><i class="sw sw-safe"></i><div><strong>Safe for normal digestive cells</strong><span>Up to 40 µM, from the studies I reviewed</span></div></li>
+            <li><i class="sw sw-eff"></i><div><strong>Slowed leukemia cells in my assay</strong><span>100 to 500 µg/mL, about 282 to 1,411 µM. IC50 at 48 h: about 1,400 to 1,480 µM.</span></div></li>
+          </ul>
+        </div>
+        <p class="window-note">Sesamin also kept precipitating out of solution in the wells, even after vortexing and warming, so the cells saw a lower and uneven dose. The next step is better delivery: formulations that dissolve properly and carry sesamin to leukemia cells.</p>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MORE PROJECTS -->
+  <section class="band band-alt" id="projects">
+    <div class="wrap">
+      <h2 class="section-title">More projects</h2>
+      <div class="tiles">
+        <article class="tile">
+          <svg class="glyph" viewBox="0 0 64 56" aria-hidden="true"><polygon points="20,8 36,36 4,36" class="g-ink"/><rect x="34" y="20" width="22" height="22" rx="3" class="g-accent"/></svg>
+          <p class="tile-year">2025</p>
+          <h3>A sensor to keep IV lines in place</h3>
+          <p>For the International Medical Research Conference (IMRC), I co-led a small team designing a wearable sensor that applies Gate Control Theory to prevent IV-line dislodgement.</p>
+        </article>
+        <article class="tile">
+          <svg class="glyph" viewBox="0 0 64 56" aria-hidden="true"><rect x="4" y="6" width="14" height="14" rx="2" class="g-soft"/><rect x="22" y="6" width="14" height="14" rx="2" class="g-soft"/><rect x="40" y="6" width="14" height="14" rx="2" class="g-soft"/><rect x="4" y="24" width="14" height="14" rx="2" class="g-soft"/><rect x="22" y="24" width="14" height="14" rx="2" class="g-accent"/><rect x="40" y="24" width="14" height="14" rx="2" class="g-soft"/><rect x="19" y="21" width="20" height="20" rx="4" class="g-frame"/></svg>
+          <p class="tile-year">2026</p>
+          <h3>Spotting pneumonia on chest X-rays</h3>
+          <p>My capstone at The University of Texas at Austin: an object-detection model (YOLOv5) that marks signs of pneumonia in X-ray images.</p>
+        </article>
+        <article class="tile">
+          <svg class="glyph" viewBox="0 0 64 56" aria-hidden="true"><polygon points="32,20 40,28 32,36 24,28" class="g-ink"/><polygon points="12,6 20,10.6 20,19.8 12,24.4 4,19.8 4,10.6" class="g-accent"/><polygon points="52,6 60,10.6 60,19.8 52,24.4 44,19.8 44,10.6" class="g-soft"/><polygon points="12,32 20,36.6 20,45.8 12,50.4 4,45.8 4,36.6" class="g-soft"/><polygon points="52,32 60,36.6 60,45.8 52,50.4 44,45.8 44,36.6" class="g-accent"/></svg>
+          <p class="tile-year">School project</p>
+          <h3>A quadcopter, built from scratch</h3>
+          <p>At Darunsikkhalai School I built a quadcopter about 80 cm across, with parts from a 3D printer and laser cutter, flying on code I wrote myself.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ODOS -->
+  <section class="band" id="odos">
+    <div class="wrap odos">
+      <div class="odos-figure" aria-hidden="true">
+        <span class="odos-num">928</span>
+        <span class="odos-of">selected from 6,496 applicants</span>
+      </div>
+      <div class="odos-text">
+        <h2>ODOS Summer Camp 2026, The University of Texas at Austin</h2>
+        <p>One of 928 students selected from 6,496 applicants across Thailand for Digital Innovation and Applied AI at Texas Global, March 29 to May 2, 2026.</p>
+        <p>Five AI courses, a capstone on pneumonia detection, and visits to Google Austin, eBay, the Texas Advanced Computing Center, Austin Technology Incubator, Austin AI Hub, Good Systems and Inventionworks. Certificate of Completion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE: Apple tech-specs style list -->
+  <section class="band band-alt" id="experience">
+    <div class="wrap">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="spec">
+        <h3 class="spec-label">Lab and research training</h3>
+        <ul class="spec-list">
+          <li><div><strong>Internship in Fundamental Molecular Genetics Technology</strong><span>Faculty of Medical Technology, Mahidol University. RT-PCR, Western blotting and flow cytometry.</span></div><time>2025</time></li>
+          <li><div><strong>Study visit, Siriraj Hospital derivatives laboratory</strong><span>Illumina NextSeq workflows, sample quality, and briefings on CAR T therapy.</span></div><time>2025</time></li>
+          <li><div><strong>International Medical Research Conference (IMRC)</strong><span>Certificate of Completion.</span></div><time>2025</time></li>
+          <li><div><strong>Research Integrity program</strong><span>National Research Council of Thailand.</span></div><time>2025</time></li>
+          <li><div><strong>Biology laboratory programmes, King Mongkut's University of Technology Thonburi</strong><span>Mitosis and meiosis, cellular respiration, photosynthesis. Biomolecule tests, enzyme properties, DNA extraction and gel electrophoresis.</span></div><time>2022</time></li>
+        </ul>
+      </div>
+
+      <div class="spec">
+        <h3 class="spec-label">Leadership</h3>
+        <ul class="spec-list cols">
+          <li><div><strong>President, 14th Triam Udom Gifted Social Studies Assessment</strong><span>A national competition: nearly 120 contestants and 30 staff, plus exams, sponsors and budget.</span></div><time>2024/25</time></li>
+          <li><div><strong>President, Triam History Society</strong><span>Founded a history podcast and a debate-based audition system. <a href="https://youtu.be/7q3QeSYRAEs">Listen to the podcast</a></span></div><time>2024/25</time></li>
+          <li><div><strong>President, Triam Udom Social Studies Department</strong><span>Managed projects, chaired meetings and coordinated with every department.</span></div><time>2024/25</time></li>
+          <li><div><strong>IT staff, Triam Udom Public Relations</strong><span>Cross-team coordination for school media.</span></div><time>2024/25</time></li>
+          <li><div><strong>Board member, 13th Triam Udom Gifted Social Studies Assessment</strong><span>Operations and on-site problem solving.</span></div><time>2024</time></li>
+          <li><div><strong>Operations lead, Triam Udom mock test</strong><span>130+ candidates. Planned with the Parents' Association and the school; ran volunteers, registration and exam control.</span></div><time></time></li>
+          <li><div><strong>Interpreter, Didacta Asia 2025</strong><span>Translated and condensed edtech pitches into Thai for teachers and government officers.</span></div><time>2025</time></li>
+          <li><div><strong>Guest management staff, TU84 Prom</strong></div><time>2023</time></li>
+        </ul>
+      </div>
+
+      <div class="spec">
+        <h3 class="spec-label">Service</h3>
+        <ul class="spec-list cols">
+          <li><div><strong>Volunteer English teacher, Samyan NewGen</strong><span>A 12-week programme for underprivileged children. I designed lessons around games.</span></div><time>2024</time></li>
+          <li><div><strong>Volunteer, Setsatian School for the Deaf</strong><span>Inclusive learning activities.</span></div><time>2024</time></li>
+        </ul>
+      </div>
+
+      <div class="spec">
+        <h3 class="spec-label">Programmes and courses</h3>
+        <ul class="spec-list cols">
+          <li><div><strong>HKUST I.ELITE scholar</strong></div><time>2025</time></li>
+          <li><div><strong>Coding and Math for IOI, Algorithm with Python 1/5</strong><span>Cubic Code, 112 hours.</span></div><time>2025</time></li>
+          <li><div><strong>Computer science with block programming</strong><span>STEM Education Center, KMUTNB.</span></div><time>2025</time></li>
+          <li><div><strong>HKU STEM Academy for the Talented Bootcamp</strong><span>Full tuition grant. The only international student in the cohort.</span></div><time>2024</time></li>
+          <li><div><strong>Member, HKU Academy for the Talented</strong></div><time>2024</time></li>
+          <li><div><strong>Financial Engineering Young Investor Bootcamp</strong><span>UTCC School of Science and Technology.</span></div><time>2024</time></li>
+          <li><div><strong>General English Advanced</strong><span>Oxford House College, Boston.</span></div><time>2024</time></li>
+          <li><div><strong>Reactor School EntreCamp</strong><span>Startup skills and mindset.</span></div><time>2023</time></li>
+          <li><div><strong>PH525.5x Introduction to Bioconductor</strong><span>HarvardX. R and Bioconductor for genomic data.</span></div><time></time></li>
+        </ul>
+      </div>
+
+      <div class="spec">
+        <h3 class="spec-label">Awards</h3>
+        <ul class="spec-list cols">
+          <li><div><strong>Certificate of Honor for Outstanding Academic Students</strong><span>Suankularb Wittayalai School.</span></div><time>2022</time></li>
+          <li><div><strong>Gold Medal, 2nd runner-up, Student Arts and Crafts Competition</strong><span>Mathematics Project, Theory Creation category.</span></div><time>2022</time></li>
+          <li><div><strong>2nd place, debate competition</strong><span>Suankularb Wittayalai Samarnmitr.</span></div><time>2022</time></li>
+          <li><div><strong>3rd place, crossword competition</strong><span>Foreign Language Day, Suankularb Wittayalai.</span></div><time>2022</time></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="band" id="about">
+    <div class="wrap about">
+      <img class="portrait" src="photo.jpg" width="560" height="647" alt="Nutthapat (Beck) Sumanont">
+
+      <div class="about-text">
+        <h2>Most people call me Beck.</h2>
+        <p>I grew up in Bangkok and finished school at Triam Udom Suksa with a GPAX of 3.80. In 2026 I came to The University of Hong Kong with a scholarship, for the BSc in Molecular Biology and Biotechnology.</p>
+        <p>My rule since I was a kid: start with a question, and don't stop until it makes sense. Biology gave that habit a direction, and leukemia gave it a reason. I like work that sits between the wet lab and the code.</p>
+        <p>What I'm working toward: cancer treatments that are effective, gentle, and actually affordable. Long term, I want to lead R&amp;D projects in pharma or biotech.</p>
+
+        <div class="facts">
+          <div>
+            <h3>Now at HKU</h3>
+            <ul>
+              <li>Branding and Marketing Officer, AIESEC in HKU</li>
+              <li>Faculty of Science Student Ambassador, 2026/27</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <ul>
+              <li>RT-PCR, Western blotting, flow cytometry, MTT assays</li>
+              <li>R, Bioconductor, DESeq2, Python, C#, Git, YOLOv5</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>Thai, native</li>
+              <li>English, IELTS 7.5</li>
+              <li>German, B1-level courses (420+ hours)</li>
+              <li>Chinese, HSK 3</li>
+              <li>Japanese</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Outside the lab</h3>
+            <ul>
+              <li>Piano, Trinity Grade 4 with Merit</li>
+              <li>Building things, from podcasts to quadcopters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="band band-alt contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-text">
+        <h2>Let's talk.</h2>
+        <p>I'm always happy to talk about leukemia, data, or research opportunities in Hong Kong.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="c-label">Email</span>
+            <a id="email-text" href="mailto:u3669044@connect.hku.hk">u3669044@connect.hku.hk</a>
+            <button type="button" class="copy" data-copy="u3669044@connect.hku.hk">Copy</button>
+          </li>
+          <li>
+            <span class="c-label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/nutthapat-sumanont">nutthapat-sumanont</a>
+          </li>
+          <li>
+            <span class="c-label">GitHub</span>
+            <a href="https://github.com/nutthapat-sumanont">nutthapat-sumanont</a>
+          </li>
+        </ul>
+      </div>
+      <div class="field-wrap">
+        <canvas id="hexfield" aria-hidden="true"></canvas>
+        <p class="field-hint">Draw on the honeycomb.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="foot-id">
+      <svg class="mark" viewBox="0 0 20 23" aria-hidden="true"><polygon points="10,0 20,5.75 20,17.25 10,23 0,17.25 0,5.75"/></svg>
+      <div><strong>Nutthapat Sumanont</strong><span>BSc student, The University of Hong Kong</span></div>
+    </div>
+    <div>
+      <h3>This page</h3>
+      <ul><li><a href="#lab">Research</a></li><li><a href="#experience">Experience</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div>
+      <h3>Elsewhere</h3>
+      <ul><li><a href="https://nutthapat-sumanont.github.io/npm1-aml-transcriptomics/">NPM1 project site</a></li><li><a href="https://drive.google.com/file/d/1cmPPznoLRwz5mSKwl2Azi1DzZHixrxHi/view">Sesamin paper</a></li><li><a href="https://www.linkedin.com/in/nutthapat-sumanont">LinkedIn</a></li><li><a href="https://github.com/nutthapat-sumanont">GitHub</a></li><li><a href="https://youtu.be/7q3QeSYRAEs">History podcast</a></li></ul>
+    </div>
+  </div>
+  <div class="wrap"><p class="foot-line">© 2026 Nutthapat Sumanont. Made in Hong Kong.</p></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
